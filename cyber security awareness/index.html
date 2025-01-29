@@ -114,7 +114,7 @@
         .strong {
             color: green;
         }
-        img{
+        img {
             width: 150px;
         }
         @media (max-width: 768px) {
@@ -141,9 +141,9 @@
             .nav-links.active {
                 display: flex;
             }
-            img{
-            width: 120px;
-        }
+            img {
+                width: 120px;
+            }
         }
     </style>
 </head>
@@ -163,34 +163,33 @@
     <main>
         <section class="products">
             <script>
-                         for (let i = 0; i < 2; i++) {
-       document.write(`
-    <div class="product">
-      <img src="6-panel-corner-insert-cap-redwhite.jpg" alt="Cyber Security T-Shirt"> 
-      <h2>Red Polo Cap</h2>
-      <button class="claim-btn">Claim Now</button>
-    </div>
-  `);
-}
-for (let i = 0; i < 2; i++) {
-       document.write(`
-    <div class="product">
-      <img src="OIP (15).jpg" alt="Cyber Security T-Shirt"> 
-      <h2>Blue T-Shirt</h2>
-      <button class="claim-btn">Claim Now</button>
-    </div>
-  `);
-}
-for (let i = 0; i < 2; i++) {
-       document.write(`
-    <div class="product">
-      <img src="OIP (12).jpg" alt="Cyber Security T-Shirt"> 
-      <h2>Dark Blue T-Shirt</h2>
-      <button class="claim-btn">Claim Now</button>
-    </div>
-  `);
-}
-
+                for (let i = 0; i < 2; i++) {
+                    document.write(`
+                        <div class="product">
+                            <img src="6-panel-corner-insert-cap-redwhite.jpg" alt="Cyber Security T-Shirt"> 
+                            <h2>Red Polo Cap</h2>
+                            <button class="claim-btn">Claim Now</button>
+                        </div>
+                    `);
+                }
+                for (let i = 0; i < 2; i++) {
+                    document.write(`
+                        <div class="product">
+                            <img src="OIP (15).jpg" alt="Cyber Security T-Shirt"> 
+                            <h2>Blue T-Shirt</h2>
+                            <button class="claim-btn">Claim Now</button>
+                        </div>
+                    `);
+                }
+                for (let i = 0; i < 2; i++) {
+                    document.write(`
+                        <div class="product">
+                            <img src="OIP (12).jpg" alt="Cyber Security T-Shirt"> 
+                            <h2>Dark Blue T-Shirt</h2>
+                            <button class="claim-btn">Claim Now</button>
+                        </div>
+                    `);
+                }
                 for (let i = 0; i < 2; i++) {
                     document.write(`
                         <div class="product">
@@ -209,7 +208,6 @@ for (let i = 0; i < 2; i++) {
                         </div>
                     `);
                 }
-       
             </script>
         </section>
     </main>
@@ -253,7 +251,8 @@ for (let i = 0; i < 2; i++) {
             const username = document.getElementById('username').value;
             const password = document.getElementById('password').value;
 
-            const response = await fetch('http://localhost:5000/signup', {
+            // Update this URL with your actual Render URL
+            const response = await fetch('https://your-render-url.com/signup', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
