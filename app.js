@@ -11,7 +11,7 @@ app.use(cors());
 
 // Initialize Supabase client
 const supabaseUrl = 'https://utntygxrkzvuzsxolmkf.supabase.co'; // Replace with your Supabase URL
-const supabaseKey = 'YOUR_SUPABASE_ANON_KEY'; // Replace with your Supabase anon key
+const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV0bnR5Z3hya3p2dXpzeG9sbWtmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzgxODk5MTQsImV4cCI6MjA1Mzc2NTkxNH0.hH-j4_4jILBpKyielC34KqgpRHiF_0gCy-yUw29GUH4'; // Replace with your Supabase anon key
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 // Signup endpoint
