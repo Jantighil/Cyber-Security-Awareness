@@ -4,7 +4,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-   "build": "next build"
+  "build": "echo 'No build step required'" 
   },
   "dependencies": {
   "@supabase/supabase-js": "^2.0.0",
